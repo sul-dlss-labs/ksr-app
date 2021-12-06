@@ -1,0 +1,189 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14pt;
+}
+
+h1 {
+	color: #702421;
+}
+
+h2 {
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #702421;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.red-banner {
+	background-color: #702f21;
+	color: #ffffff;
+	min-height: 50px;
+	margin-bottom: 0px;
+	padding: 5px;
+	width: 250px;
+	text-align: center;
+}
+
+.quote {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #2f576e;
+	margin: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+
+}
+
+.small {
+	font-size: 0.8rem;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+/**************************/
+/* start navbar styles   */
+.nav-link,
+.navbar-brand {
+    color: #2f576e;
+	font-weight: bold;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link.active {
+	text-decoration: underline;
+	color: #702f21;
+}
+.navbar-collapse {
+    justify-content: center;
+}
+/* end navbar styles      */
+/**************************/
+
+/**************************/
+/* start home page styles */
+.home {
+    background-image: image_url('home_mlkmarch_homepage.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header {
+    background:#ddd;
+}
+
+.header-home {
+    color: #0D1F2C;
+}
+
+.bubbles {
+	margin: 2em auto;
+	padding: 1em;
+    background-color: #ccc;
+	opacity: 80%;
+	color: #000;
+}
+
+.quote-bar {
+	background-color: #000;
+	font-family: 'Caveat';
+	color: #ffffff;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.features-bar {
+	background-color: #2f576e;
+}
+
+.features-bar a{
+	color: #ffffff;
+}
+
+.features {
+	padding: 1em;
+	position: relative;
+	color: #ddd;
+}
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+
+.stories-bar {
+	background-color: #fff;
+	display: none;
+}
+
+.explain-bar {
+	background-color: #c0c0b6;
+}
+
+.events-bar {
+	background-color: #dfdbd3;
+	display: none;
+}
+
+.edu-bar {
+	background-color: #ac8d4d;
+	display: none;
+}
+
+.about-bar {
+	background-color: #fff;
+}
+
+/* end home page styles   */
+/**************************/
+
+/***********************/
+/* start footer styles */
+.page-footer {
+	background-color: #6d747e;
+	color: #ccc;
+	font-size: 0.8rem;
+}
+.page-footer a {
+	color: #ccc;
+}
+.page-footer a:hover {
+	color: #702f21;
+}
+.page-footer ul {
+	margin: 0px;
+	padding: 0px;
+}
+.page-footer li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+/* end footer styles   */
+/***********************/

@@ -1,0 +1,50 @@
+<footer class="page-footer">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col">
+               <strong><%=link_to 'About', :about%></strong>
+               <ul>
+                   <li>Terms of Use</li>
+                   <li>Help</li>
+                   <li><%=link_to 'Contact Us', :contact%></a></li>
+               </ul>
+            </div>
+            <div class="col">
+                <strong>Search</strong>
+                <ul>
+                    <li>Our database</li>
+                    <li>Other resources</li>
+                    <li>Data analysis tools</li>
+                </ul>
+             </div>
+             <div class="col">
+                <strong><%=link_to 'Housing', :housing%></strong>
+                <ul>
+                    <li>History</li>
+                    <li>Timeline</li>
+                    <li>Case studies</li>
+                </ul>
+             </div>
+             <div class="col">
+                <strong><%=link_to 'Policing', :policing%></strong>
+                <ul>
+                    <li>History</li>
+                    <li>Timeline</li>
+                    <li>Case studies</li>
+                </ul>
+             </div>
+             <div class="col">
+                <strong><%=link_to 'Get Involved', :get_involved%></strong>
+                <ul>
+                    <li>Connect</li>
+                    <li>Collaborate</li>
+                    <li>Curate</li>
+                </ul>
+             </div>
+             <div class="col-5">
+                <%=link_to image_tag('logo_stanfordlibraries.png', alt: "Stanford Libraries", class: "img-fluid", width: "35%"), "https://library.stanford.edu"%> in partnership with
+                <%=link_to image_tag('logo_howard.png', alt: "Howard Law", class: "img-fluid", width: "35%"), "http://law.howard.edu"%>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  <%= render "shared/page_head" %>
+
+  <body>
+    <div class="header">
+        <div class="row">
+            <div class="col-5 px-5">
+                <%=link_to image_tag('ksr-logo-horizontal.png', alt: "KNOW Systemic Racism"), :root%>
+            </div>
+            <div class="col-7"></div>
+        </div>
+    </div>
+
+    <%= render "shared/navbar" %>
+
+    <%= yield %>
+
+    <%= render "shared/footer" %>
+
+  </body>
+</html>
