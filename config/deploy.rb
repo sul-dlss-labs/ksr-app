@@ -13,7 +13,7 @@ ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 # Default value for :linked_files is []
 set :linked_files, fetch(:linked_files, []).push(
   'config/secrets.yml',
-  'config/database.yml',
+  #'config/database.yml',
 )
 
 # Default value for linked_dirs is []
@@ -32,5 +32,4 @@ set :linked_dirs, fetch(:linked_dirs, []).push(
 # we want prod rather than production
 # set :honeybadger_env, fetch(:stage)
 
-# UNCOMMENT IF WE USE SHARED_CONFIGS
-#before 'deploy:restart', 'shared_configs:update'
+before 'deploy:restart', 'shared_configs:update'

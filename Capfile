@@ -34,11 +34,12 @@ install_plugin Capistrano::SCM::Git
 # require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 
+require 'capistrano/rvm'
 require 'capistrano/bundler'
 require 'capistrano/rails'
+require 'capistrano/maintenance'
 require 'capistrano/passenger'
 require 'capistrano/shared_configs'
-require 'capistrano/shell'
 require 'dlss/capistrano'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
