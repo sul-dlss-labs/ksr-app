@@ -1,0 +1,35 @@
+<div class="row p-3">
+    <div class="col-12">
+        <h1>Resources and Data on Systemic Racism</h1>
+        <p>Individual policies around housing and policing have systematic impacts, and when put together, these policies re-inforce and further propogate disparities.  We are gathering data to show the interconnectedness of these policies and their impact on systemic racism in the San Francisco Bay area and California.  Here are some searches to explore:</p>
+        <div class="row justify-content-center quicksearch-ga-click-tracking">
+             <div class="col-6 pb-4 module">
+                <%= render_module(@searches['catalog'], 'catalog') %>
+            </div>
+             <div class="col-6 pb-4 module">
+                <%= render_module(@searches['article'], 'article') %>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-3 pb-2"><p class="red-banner">Systemic Racism Tracker's Additional Resources</p>
+                <%=link_to image_tag('blm.png', alt: "Black Lives Matter"), "https://guides.library.stanford.edu/SystemicRacismTracker"%>
+            </div>
+            <div class="col-3 pb-2"><p class="red-banner">WorldCat</p>
+                <%=link_to image_tag('WorldCat_Logo.png', alt: "WorldCat"), "https://www.worldcat.org/search?q=housing+AND+policing+AND+Bay+Area"%>
+            </div>
+            <div class="col-3 pb-2"><p class="red-banner">Digital Public Library of America</p>
+                <%=link_to image_tag('dpla-logo-square_250.png', alt: "Digital Public Library of America"), "https://dp.la/search?q=housing+AND+police+AND+California"%>
+            </div>
+        </div>
+        <div class="row pt-4 justify-content-center">
+            <div class="col-6 text-center">
+                <h3>Examples of policies and how they intersect</h3>
+                <%=image_tag "housing_policing_venn_diagram.png", width: "100%", alt: "Housing/Policing Venn Diagram" %>
+            </div>
+            <div class="col-6 text-center">
+                <h3>Watch a short film on predictive policing and "algorithmic violence"</h3>
+                <iframe src="https://embed.stanford.edu/iframe?url=https://purl.stanford.edu/gq999bh9311&hide_title=true" height="300px" width="80%" title="Media viewer" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

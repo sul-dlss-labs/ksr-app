@@ -1,33 +1,37 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  default_title: "Stanford Libraries"
+  exhibits_search:
+    short_display_name: Exhibits
+    display_name: Exhibits
+    micro_display_name: exhibits
+    no_results_service_message: "a different search"
+    no_results_link: "https://exhibits.stanford.edu/"
+    pass_on_search_link_text: Search "%{query}" in all exhibit items
+    sub_heading_html: Digital showcases for research and teaching.
+    toggle_button_text: Show %{total} exhibits
+  opensearch_description: "Stanford Libraries"
+  defaults_search:
+    title_name: Search
+  organization_name: Stanford Libraries
+  catalog_search:
+    display_name: "Books in Searchworks"
+    short_display_name: "Catalog"
+    sub_heading_html: Physical and digital books, media, journals, archives, and databases.
+    micro_display_name: "catalog"
+    search_form_placeholder: "Search SearchWorks catalog"
+    module_callout: "Search SearchWorks catalog"
+    error_service_mesasge: "searching SearchWorks catalog"
+    no_results_service_message: "a different search"
+    no_results_link: "http://searchworks.stanford.edu/"
+  article_search:
+    display_name: "Articles in Searchworks"
+    short_display_name: "Articles+"
+    sub_heading_html: Journal articles, e-books, and other e-resources.
+    micro_display_name: "articles+"
+    search_form_placeholder: "Search SearchWorks articles+"
+    module_callout: "Search SearchWorks articles+"
+    error_service_mesasge: "searching SearchWorks articles+"
+    no_results_service_message: "a different search"
+    no_results_link: "http://searchworks.stanford.edu/articles"
+  search_form:
+    placeholder: "catalog + articles + website + more"
