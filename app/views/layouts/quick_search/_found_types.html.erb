@@ -1,0 +1,12 @@
+<% # overriden from the QuickSearch gem %>
+<nav class="row searcher-anchors" aria-label="Results found in">
+  <ul class="list-inline h4">
+    <% Settings.ENABLED_SEARCHERS.each do |searcher| %>
+        <li class='list-inline-item'>
+          <a href="#<%= searcher.underscore %>" data-quicksearch-ga-action="<%= searcher.underscore %>">
+            <%= t("#{searcher}_search.short_display_name") %>
+          </a>
+        </li>
+    <% end %>
+  </ul>
+</nav>
