@@ -3,6 +3,13 @@
         <h1>Resources and Data on Systemic Racism</h1>
         <p>Individual policies around housing and policing have systematic impacts, and when put together, these policies re-inforce and further propogate disparities.  We are gathering data to show the interconnectedness of these policies and their impact on systemic racism in the San Francisco Bay area and California.  Here are some searches to explore:</p>
         <div class="row justify-content-center quicksearch-ga-click-tracking">
+             <div class="col-12 pb-3 text-center justify-content-center">
+                  <%= form_with url: quick_search_path, method: :get do |form| %>
+                    <%= form.label :query, "Look for:" %>
+                    <%= form.text_field :q, value: params[:q], size: '60%' %>
+                    <%= form.submit "Search" %>
+                  <% end %>
+              </div>
              <div class="col-6 pb-4 module">
                 <%= render_module(@searches['catalog'], 'catalog') %>
             </div>
