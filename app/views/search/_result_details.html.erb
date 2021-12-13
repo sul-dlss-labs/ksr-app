@@ -13,7 +13,7 @@
   </p>
 <% end %>
 
-<% if result.description.present? %>
+<% if Settings.quick_search.show_details_in_results && result.description.present? %>
   <p class="description"><%= result.description.html_safe %></p>
 <% end %>
 

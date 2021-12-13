@@ -17,3 +17,4 @@ ARTICLE:
 quick_search:
   http_timeout: 1.5
   xhr_http_timeout: 15
+  show_details_in_results: false
