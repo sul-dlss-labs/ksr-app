@@ -1,31 +1,31 @@
-class DefaultController < ApplicationController
+# frozen_string_literal: true
 
+class DefaultController < ApplicationController
   def index
     render layout: false
   end
 
   def about
-    @page_name="About"
+    @page_name = 'About'
   end
 
   def housing
-    @page_name="Housing"
+    @page_name = 'Housing'
   end
 
   def policing
-    @page_name="Policing"
+    @page_name = 'Policing'
   end
 
-  def get_involved
-    @page_name="Get Involved"
+  def involved
+    @page_name = 'Get Involved'
   end
 
   def timeline
-    @page_name="History Timeline"
+    @page_name = 'History Timeline'
   end
 
   def data
-    @page_name="Data On Systemic Racism"
+    @page_name = 'Data On Systemic Racism'
   end
-
 end

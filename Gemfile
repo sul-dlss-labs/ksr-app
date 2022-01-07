@@ -42,6 +42,15 @@ group :development do
   gem 'spring'
 end
 
+group :development, :test do
+  gem 'rubocop'
+  gem 'rubocop-rspec'
+  gem 'rubocop-rails'
+  gem 'rubocop-rake'
+  gem 'rspec'
+  gem 'rspec-rails'
+end
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'

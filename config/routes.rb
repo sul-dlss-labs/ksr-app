@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "default#index"
   get 'timeline', to: "default#timeline"
   get 'data', to: "default#data"
-  get 'get_involved', to: "default#get_involved"
+  get 'involved', to: "default#involved"
   get 'housing', to: "default#housing"
   get 'policing', to: "default#policing"
   get 'contact', to: "default#contact"
