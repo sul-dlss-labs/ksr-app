@@ -24,6 +24,7 @@ gem 'okcomputer'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+gem 'sassc-rails'
 gem 'jquery-rails'
 gem 'config'
 gem 'http'
