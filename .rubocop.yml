@@ -1,0 +1,30 @@
+inherit_from: .rubocop_todo.yml
+require:
+  - rubocop-rspec
+  - rubocop-rake
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0
+  Exclude:
+    - 'Gemfile'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'spec/factories/*.local.rb'
+    - 'spec/fixtures/**/*'
+    - 'spec/spec_helper.rb'
+    - 'vendor/**/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - config/**/*
+    - spec/**/*
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+
+Style/Documentation:
+  Enabled: false

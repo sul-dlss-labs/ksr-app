@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-md">
     <div class="collapse navbar-collapse" id="main-navigation">
         <ul class="navbar-nav">
-            <% {housing: "Housing", policing: "Policing", get_involved: "Get Involved"}.each do |page, label|
+            <% {housing: "Housing", policing: "Policing", involved: "Get Involved"}.each do |page, label|
                 classes = ['nav-link']
                 classes << 'active' if label == @page_name
             %>
