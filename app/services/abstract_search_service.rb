@@ -46,6 +46,7 @@ class AbstractSearchService
     QUERY_URL = nil
 
     attr_reader :body
+
     # @param [String] `body` is the HTTP response body
     def initialize(body)
       @body = body
@@ -83,7 +84,7 @@ class AbstractSearchService
     private
 
     def sorted_highlighted_facet_values
-      return [] unless highlighted_facet['items'].present?
+      return [] if highlighted_facet['items'].blank?
 
       highlighted_facet['items'].sort { |a, b| b['hits'].to_i <=> a['hits'].to_i }
     end
@@ -96,8 +97,9 @@ class AbstractSearchService
   end
 
   class Result
-    ATTRS = %i[author title imprint description link id thumbnail breadcrumbs fulltext_link_html temporary_access_link_html].freeze
-    attr_accessor *ATTRS
+    ATTRS = %i[author title imprint description link id thumbnail breadcrumbs fulltext_link_html
+               temporary_access_link_html].freeze
+    attr_accessor(*ATTRS)
 
     def to_h
       h = {}
