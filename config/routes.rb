@@ -3,14 +3,13 @@ Rails.application.routes.draw do
   root to: "default#index"
 
   get 'timeline', to: "default#timeline"
-  get 'data', to: "default#data"
   get 'involved', to: "default#involved"
   get 'housing', to: "default#housing"
   get 'policing', to: "default#policing"
   get 'contact', to: "default#contact"
   get 'about', to: "default#about"
 
-  get '/search' => 'search#index', as: 'quick_search'
-  get '/search/xhr_search/:endpoint' => 'search#xhr_search', as: 'xhr_search', defaults: { :format => 'html' }
+  get 'search' => 'search#index', as: 'quick_search'
+  get 'search/xhr_search/:endpoint' => 'search#xhr_search', as: 'xhr_search', defaults: { :format => 'html' }
 
 end
