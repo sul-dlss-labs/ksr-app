@@ -2,10 +2,10 @@
 
 module QuickSearch
   class CatalogSearcher < QuickSearch::ApplicationSearcher
-    delegate :results, :total, :facets, to: :@response
+    delegate :results, :total, :facets, to: :@search
 
     def search
-      @response ||= ::CatalogSearchService.new(http: http).search(q)
+      @search ||= ::CatalogSearchService.new(http: http).search(q)
     end
 
     def loaded_link

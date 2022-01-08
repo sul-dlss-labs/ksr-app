@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SearchService
   attr_reader :query
 
@@ -6,23 +8,21 @@ class SearchService
   end
 
   def all(threads: true, searchers: Settings.ENABLED_SEARCHERS)
-    searches = searchers.each_with_object({}) do |searcher, hash|
-      hash[searcher] = nil
+    searches = searchers.index_with do |_searcher|
+      nil
     end
 
     search_threads = searches.keys.shuffle.map do |search_method|
       # Use auto-loading outside the threadpool
       klass = "QuickSearch::#{search_method.camelize}Searcher".constantize
 
-      Thread.new(search_method) do |sm|
-        begin
-          searches[search_method] = one(klass, timeout: Settings.quick_search.http_timeout)
-        rescue StandardError => e
-          logger.info "FAILED SEARCH: #{search_method} | #{query} | #{e}"
-        end
+      Thread.new(search_method) do |_sm|
+        searches[search_method] = one(klass, timeout: Settings.quick_search.http_timeout)
+      rescue StandardError => e
+        logger.info "FAILED SEARCH: #{search_method} | #{query} | #{e}"
       end
     end
-    search_threads.each {|t| t.join}
+    search_threads.each(&:join)
 
     searches
   end
@@ -30,15 +30,15 @@ class SearchService
   def one(searcher, timeout: 30)
     benchmark "%s #{searcher}" % CGI.escape(query.to_str) do
       klass = case searcher
-      when Class
-        searcher
-      else
-        "QuickSearch::#{searcher.camelize}Searcher".constantize
-      end
+              when Class
+                searcher
+              else
+                "QuickSearch::#{searcher.camelize}Searcher".constantize
+              end
 
       client = HTTP.timeout(timeout)
 
-      klass.new(client, query).tap { |searcher| searcher.search }
+      klass.new(client, query).tap(&:search)
     end
   end
 
@@ -49,7 +49,7 @@ class SearchService
   def benchmark(message)
     result = nil
     ms = Benchmark.ms { result = yield }
-    BenchmarkLogger.info '%s (%.1fms)' % [ message, ms ]
+    BenchmarkLogger.info format('%s (%.1fms)', message, ms)
     result
   end
 

@@ -24,19 +24,17 @@ module QuickSearch
     def self.module_link_on_error(service_name, error, query)
       if I18n.exists?("#{service_name}_search.loaded_link")
         # Preserve legacy behavior of using "loaded_link" from I18n locale file
-        return I18n.t("#{service_name}_search.loaded_link") + ERB::Util.url_encode("#{query}")
+        I18n.t("#{service_name}_search.loaded_link") + ERB::Util.url_encode(query.to_s)
       elsif error.is_a? QuickSearch::SearcherError
         searcher_obj = error.searcher
-        return searcher_obj.loaded_link
+        searcher_obj.loaded_link
       end
     end
 
     private
 
     def filter_query(query)
-      if query.match(/ -$/)
-        query = query.sub(/ -$/,"")
-      end
+      query = query.sub(/ -$/, '') if query.match(/ -$/)
       query.gsub!('*', ' ')
       query.gsub!('!', ' ')
       query.gsub!('-', ' ') # Solr returns an error if multiple dashes appear at start of query string
@@ -45,9 +43,7 @@ module QuickSearch
       query.strip!
       query.squish!
       query.downcase! # FIXME: Do we really want to downcase everything?
-      query = truncate(query, length: 100, separator: ' ', omission: '', escape: false)
-
-      query
+      truncate(query, length: 100, separator: ' ', omission: '', escape: false)
     end
   end
 end
