@@ -37,7 +37,7 @@ jobs:
         command: bundle exec rubocop
     - run:
         name: Prepare DB for tests
-        command: bin/rails db:reset
+        command: bin/rails db:schema:load
     - run:
         name: Run rspec
         command: bundle exec rspec
