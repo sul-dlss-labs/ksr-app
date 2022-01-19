@@ -9,7 +9,7 @@ gem 'sqlite3', '~> 1.4'
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sassc-rails'
-gem 'bootstrap'
+gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
