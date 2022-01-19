@@ -87,7 +87,7 @@ a:hover {
 /**************************/
 /* start home page styles */
 .home {
-    background-image: image_url('home_mlkmarch_homepage.png');
+    background-image: url('home_mlkmarch_homepage.png');
     background-size: cover;
     background-position: center;
     position: relative;
