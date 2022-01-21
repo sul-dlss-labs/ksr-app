@@ -2,7 +2,7 @@
 
 ## KSR Website Rails App
 
-A rails app for the KSR website.
+A rails app for the KSR website.  Currently live at https://ksr.stanford.edu
 
 ## Running locally
 
