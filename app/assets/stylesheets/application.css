@@ -29,14 +29,21 @@ h4 {
 	margin-bottom: 20px;
 }
 
-.red-banner {
+.red-banner-title {
 	background-color: #702f21;
 	color: #ffffff;
 	min-height: 50px;
 	margin-bottom: 0px;
-	padding: 5px;
-	width: 250px;
+	padding: 10px 5px 0 0;
 	text-align: center;
+}
+
+.red-banner-body {
+	padding: 25px 0 5px 10px;
+}
+
+.red-banner-body li {
+	padding-bottom: 8px;
 }
 
 .quote {
