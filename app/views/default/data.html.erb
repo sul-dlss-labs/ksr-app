@@ -4,29 +4,35 @@
         <p>Individual policies around housing and policing have systematic impacts, and when put together, these policies re-inforce and further propogate disparities.  We are gathering data to show the interconnectedness of these policies and their impact on systemic racism in the San Francisco Bay area and California.  Here are some searches to explore:</p>
         <div class="row gx-4 justify-content-center">
             <div class="col-6 pb-4">
+              <div class="red-banner-body">
                 <p class="red-banner-title">KNOW Systemic Racism Additional Resources</p>
-                <div class="red-banner-body">
                     <ul>
-                        <li class="pb-6"><%=link_to "Library Guide", "https://guides.library.stanford.edu/SystemicRacismTracker"%></li>
+                        <li class="pb-6 pt-4"><%=link_to "Library Guide", "https://guides.library.stanford.edu/SystemicRacismTracker"%></li>
                         <li><%=link_to "Related projects happening on campus", "https://news.stanford.edu/2022/02/01/examining-systemic-racism-advancing-racial-equity/"%></li>
                         <li><%=link_to "Say Their Names Spotlight Exhibit", "https://exhibits.stanford.edu/saytheirnames"%></li>
                     </ul>
-                 </div>
+              </div>
             </div>
              <div class="col-6 pb-4">
-                <p class="red-banner-title">Databases</p>
                 <div class="red-banner-body">
-                    <div class="row pb-4 pt-2">
-                        <div class="col-3"><%=image_tag('nerd_squirrel.png', alt: "SearchWorks", width: "60px")%></div>
-                        <div class="col-9 align-self-center"><%=link_to "Articles and books in SearchWorks", "https://library.stanford.edu/all/?q=housing+AND+polic%2A+AND+Bay+Area"%></div>
+                   <p class="red-banner-title">Databases</p>
+                    <div class="border-bottom">
+                        <div class="row pb-4 pt-4">
+                            <div class="col-3 d-flex justify-content-center"><%=image_tag('nerd_squirrel.png', alt: "SearchWorks", width: "60px")%></div>
+                            <div class="col-9 align-self-center"><%=link_to "Articles and books in SearchWorks", "https://library.stanford.edu/all/?q=housing+AND+polic%2A+AND+Bay+Area"%></div>
+                        </div>
                     </div>
-                     <div class="row pb-3 pt-4">
-                        <div class="col-3"><%=image_tag('WorldCat_Logo.png', alt: "WorldCat", width: "60px")%></div>
-                        <div class="col-9 align-self-center"><%=link_to "WorldCat", "https://www.worldcat.org/search?q=housing+AND+policing+AND+Bay+Area"%></div>
+                    <div class="border-bottom">
+                        <div class="row pb-4 pt-4">
+                            <div class="col-3 d-flex justify-content-center"><%=image_tag('WorldCat_Logo.png', alt: "WorldCat", width: "60px")%></div>
+                            <div class="col-9 align-self-center"><%=link_to "WorldCat", "https://www.worldcat.org/search?q=housing+AND+policing+AND+Bay+Area"%></div>
+                        </div>
                      </div>
-                     <div class="row pb-3 pt-4">
-                        <div class="col-3"><%=image_tag('dpla-logo-square_250.png', alt: "Digital Public Library of America", width: "60px")%></div>
-                        <div class="col-9 align-self-center"> <%=link_to "Digital Public Library of America", "https://dp.la/search?q=housing+AND+police+AND+California"%></div>
+                     <div>
+                        <div class="row pb-4 pt-4">
+                            <div class="col-3 d-flex justify-content-center"><%=image_tag('dpla-logo-square_250.png', alt: "Digital Public Library of America", width: "60px")%></div>
+                            <div class="col-9 align-self-center"> <%=link_to "Digital Public Library of America", "https://dp.la/search?q=housing+AND+police+AND+California"%></div>
+                        </div>
                     </div>
                 </div>
             </div>

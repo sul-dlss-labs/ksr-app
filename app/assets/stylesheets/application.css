@@ -39,7 +39,8 @@ h4 {
 }
 
 .red-banner-body {
-	padding: 25px 0 5px 10px;
+	border: #ddd 1px solid;
+	min-height: 400px;
 }
 
 .red-banner-body li {
