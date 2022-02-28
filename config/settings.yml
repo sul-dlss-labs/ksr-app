@@ -1,0 +1,20 @@
+MAX_RESULTS: 3
+
+GLOBAL_ALERT: <%= false %>
+ENABLED_SEARCHERS:
+  - catalog
+  - article
+CATALOG:
+  API_URL: 'https://searchworks.stanford.edu/?q=%{q}&rows=%{max}&format=json'
+  QUERY_URL: 'https://searchworks.stanford.edu/?q=%{q}'
+  FETCH_URL: 'https://searchworks.stanford.edu/view/%{id}'
+  HOME_URL: 'https://searchworks.stanford.edu'
+ARTICLE:
+  API_URL: 'https://searchworks.stanford.edu/articles?q=%{q}&rows=%{max}&format=json'
+  QUERY_URL: 'https://searchworks.stanford.edu/articles?q=%{q}'
+  FETCH_URL: 'https://searchworks.stanford.edu/articles/%{id}'
+  HOME_URL: 'https://searchworks.stanford.edu/articles'
+quick_search:
+  http_timeout: 1.5
+  xhr_http_timeout: 15
+  show_details_in_results: false

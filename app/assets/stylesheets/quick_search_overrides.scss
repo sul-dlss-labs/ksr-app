@@ -1,0 +1,38 @@
+$su-cloud: #dad7cb;
+$white: #ffffff;
+$red: #8c1515 !default;
+
+#content {
+    h3.result-title {
+      font-family: 'dejavu_sansextralight';
+      letter-spacing: -.03em;
+    }
+  }
+
+  .module-contents {
+    background-color: $white;
+    border: 1px solid $su-cloud;
+    border-top: 5px solid $red;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+  }
+
+  .search-container {
+    .form-group {
+      h1 {
+      margin: 0 15px 0 0;
+      padding: 0;
+      }
+
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+
+    label {
+      color: $red;
+      font-weight: inherit;
+      line-height: inherit;
+      padding: 0;
+    }
+  }
