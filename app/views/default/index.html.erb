@@ -19,19 +19,19 @@
     <div class="container">
         <div class="row">
             <div class="col-3 bubbles rounded text-center">
-                <h2>Learn about systemic racism</h2>
-                <%= link_to image_tag('button_timeline.png', class: "img-fluid pt-5", alt: "timeline"), :timeline %>
+                <h2><%= link_to "Learn about systemic racism", :timeline%></h2>
+                <%= link_to image_tag('button_timeline.png', class: "img-fluid pt-5 d-none d-md-block", alt: "timeline"), :timeline %>
             </div>
             <div class="col-1"></div>
             <div class="col-3 bubbles rounded text-center">
-                <h2>Search for data on systemic racism</h2>
-                <%= link_to image_tag('button_resources.png', class: "img-fluid pt-5", alt: "search resources"), :data %>
+                <h2><%= link_to "Search for data on systemic racism", :data%></h2>
+                <%= link_to image_tag('button_resources.png', class: "img-fluid pt-5 d-none d-md-block", alt: "search resources"), :data %>
             </div>
             <div class="col-1"></div>
             <div class="col-3 bubbles rounded text-center">
-                <h2>Get involved</h2>
+                <h2><%= link_to "Get involved", :involved%></h2>
                 <p>Help us put an end to systemic racism</p>
-                <%= link_to image_tag('button_connect.png', class: "img-fluid pt-5", alt: "get involved"), :involved %>
+                <%= link_to image_tag('button_connect.png', class: "img-fluid pt-5 d-none d-md-block", alt: "get involved"), :involved %>
             </div>
         </div>
     </div>

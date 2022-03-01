@@ -3,7 +3,7 @@ body {
     margin: 0;
     background: #f2f6e9;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 14pt;
+	font-size: 1.1rem;
 }
 
 h1 {
@@ -29,14 +29,22 @@ h4 {
 	margin-bottom: 20px;
 }
 
-.red-banner {
+.red-banner-title {
 	background-color: #702f21;
 	color: #ffffff;
 	min-height: 50px;
 	margin-bottom: 0px;
-	padding: 5px;
-	width: 250px;
+	padding: 10px 5px 0 0;
 	text-align: center;
+}
+
+.red-banner-body {
+	border: #ddd 1px solid;
+	min-height: 400px;
+}
+
+.red-banner-body li {
+	padding-bottom: 8px;
 }
 
 .quote {
@@ -107,6 +115,11 @@ a:hover {
     background-color: #ccc;
 	opacity: 80%;
 	color: #000;
+}
+
+.bubbles h2 a {
+	color: #000;
+	font-size: 1.3rem;
 }
 
 .quote-bar {
