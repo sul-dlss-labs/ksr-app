@@ -3,7 +3,7 @@ body {
     margin: 0;
     background: #f2f6e9;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 14pt;
+	font-size: 1.1rem;
 }
 
 h1 {
@@ -115,6 +115,11 @@ a:hover {
     background-color: #ccc;
 	opacity: 80%;
 	color: #000;
+}
+
+.bubbles h2 a {
+	color: #000;
+	font-size: 1.3rem;
 }
 
 .quote-bar {
