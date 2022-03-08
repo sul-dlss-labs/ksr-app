@@ -134,6 +134,11 @@ a:hover {
 	background-color: #2f576e;
 }
 
+.viz-bar {
+	background-color: #eeeeee;
+	opacity: 80%;
+}
+
 .features-bar a{
 	color: #ffffff;
 }
