@@ -28,4 +28,8 @@ class DefaultController < ApplicationController
   def data
     @page_name = 'Data On Systemic Racism'
   end
+
+  def connections
+    @connections = 'Explore Connections'
+  end
 end

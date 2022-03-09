@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'policing', to: "default#policing"
   get 'contact', to: "default#contact"
   get 'about', to: "default#about"
+  get 'connections', to: "default#connections"
 end

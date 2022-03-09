@@ -20,10 +20,10 @@
         <div class="row pb-3">
             <div class="pt-2 col-3 viz-bar">
                 <h4>The latest in the fight against systemic racism</h4>
-                <p>The visualization shown to the right demonstrates the interconnections that reinforce discriminatory practices.</p>
+                <p>Learn about systemic racism by <%= link_to "exploring connections", :connections%> between instances of police brutality in the Greater Bay Area.</p>
             </div>
             <div class="col-6 text-center viz-bar">
-                <%= image_tag('screenshot.png', class: "img-fluid pt-2", alt: "linkurious") %>
+                <%= link_to image_tag('linkurious1.png', class: "img-fluid pt-2", alt: "connections"), :connections %>
             </div>
             <div class="col-3 text-center">
                 <div class="text-center">
