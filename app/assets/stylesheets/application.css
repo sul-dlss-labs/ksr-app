@@ -139,6 +139,16 @@ a:hover {
 	opacity: 80%;
 }
 
+.rounded-left {
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.rounded-right {
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
 .features-bar a{
 	color: #ffffff;
 }
