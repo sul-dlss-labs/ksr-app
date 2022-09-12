@@ -1,6 +1,6 @@
 # see https://github.com/sul-dlss/sul_pub/wiki/Servers-Deployment-environment
 set :application, 'ksr-search'
-set :repo_url, "git@github.com:sul-dlss-labs/ksr-app.git"
+set :repo_url, "git@github.com:sul-dlss/ksr-app.git"
 set :ssh_options,   keys: [Capistrano::OneTimeKey.temporary_ssh_private_key_path],
                     forward_agent: true,
                     auth_methods: %w(publickey password)
