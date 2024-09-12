@@ -17,21 +17,24 @@
     <%= render "shared/navbar" %>
 
     <div class="container">
-        <div class="row">
-            <div class="col-3 bubbles rounded text-center">
-                <h2><%= link_to "Learn about systemic racism", :timeline%></h2>
-                <%= link_to image_tag('button_timeline.png', class: "img-fluid pt-5 d-none d-md-block", alt: "timeline"), :timeline %>
+        <div class="row pb-3">
+            <div class="pt-2 col-3 viz-bar rounded-left">
+                <h4>The latest in the fight against systemic racism</h4>
+                <p>Learn about systemic racism by <%= link_to "exploring connections", :connections%> between archival records and fatal encounters with police in the Greater Bay Area.</p>
             </div>
-            <div class="col-1"></div>
-            <div class="col-3 bubbles rounded text-center">
-                <h2><%= link_to "Search for data on systemic racism", :data%></h2>
-                <%= link_to image_tag('button_resources.png', class: "img-fluid pt-5 d-none d-md-block", alt: "search resources"), :data %>
+            <div class="col-6 text-center viz-bar rounded-right">
+                <%= link_to image_tag('linkurious1.png', class: "img-fluid pt-2", alt: "connections"), :connections %>
             </div>
-            <div class="col-1"></div>
-            <div class="col-3 bubbles rounded text-center">
-                <h2><%= link_to "Get involved", :involved%></h2>
-                <p>Help us put an end to systemic racism</p>
-                <%= link_to image_tag('button_connect.png', class: "img-fluid pt-5 d-none d-md-block", alt: "get involved"), :involved %>
+            <div class="col-3 text-center">
+                <div class="text-center">
+                    <%= link_to image_tag('button_timeline.png', class: "img-fluid pt-4", alt: "timeline"), :timeline %>
+                </div>
+                <div class="text-center">
+                    <%= link_to image_tag('button_resources.png', class: "img-fluid pt-4", alt: "search resources"), :data %>
+                </div>
+                <div class="text-center">
+                    <%= link_to image_tag('button_connect.png', class: "img-fluid pt-4", alt: "get involved"), :involved %>
+                </div>
             </div>
         </div>
     </div>

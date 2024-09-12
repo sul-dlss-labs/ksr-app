@@ -134,6 +134,26 @@ a:hover {
 	background-color: #2f576e;
 }
 
+.viz-bar {
+	background-color: #eeeeee;
+	opacity: 80%;
+}
+
+.rounded-left {
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.rounded-right {
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+li {
+	padding-left: 5px;
+	margin-left: 40px;
+}
+
 .features-bar a{
 	color: #ffffff;
 }
